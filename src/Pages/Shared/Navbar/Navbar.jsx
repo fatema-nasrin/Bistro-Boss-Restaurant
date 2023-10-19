@@ -1,13 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     const navOptions = <>
      <li>
-                <a>Item 1</a>
+                <Link to="/menu">Our Menu</Link>
               </li>
               <li>
-                <a>Parent</a>
-              </li>
-              <li>
-                <a>Item 3</a>
+                <Link to="/">Dashboard</Link>
               </li>
     </>
   return (
@@ -48,6 +47,8 @@ const Navbar = () => {
         <div className="navbar-end">
           <a className="btn">Button</a>
         </div>
+        <h3>
+        </h3>
       </div>
     </div>
   );
